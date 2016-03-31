@@ -4,7 +4,7 @@ Tiny collection of predictable type checking for Javascript.
 #### Motivation
 Coming from other languages one of the things that can make javascript very annoying is type checking, this module makes it as predictable as it is in other languages.
 
-In addition for the same reason as described above it brings some useful checkings for classes, like isInstanceOf, isSubClassOf, etc ...
+In addition for the same reason described above it brings some useful checkings for classes, like isInstanceOf, isSubClassOf, etc ...
 
 #### Requirements
 This module requires support for es6+
