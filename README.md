@@ -1,8 +1,8 @@
 # js-typecheck
-Tiny collection of type checking in a reasonable way for Javascript.
+Tiny collection of predictable type checking for Javascript.
 
 #### Motivation
-Coming from other languages one of the things that can make javascript very annoying is type checking, this module makes it as simple as they are in other languages.
+Coming from other languages one of the things that can make javascript very annoying is type checking, this module makes it as predictable as they are in other languages.
 
 In addition for the same reason as described above it brings some useful checkings for classes, like isInstanceOf, isSubClassOf, etc ...
 
