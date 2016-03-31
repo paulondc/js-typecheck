@@ -9,10 +9,23 @@ In addition for the same reason as described above it brings some useful checkin
 #### Requirements
 This module requires support for es6+
 
-#### install
+#### Install
 npm install js-typecheck --save
 
-#### examples
+#### Supported
+
+- isSubClassOf
+- isInstanceOf
+- isSameType
+- isObject
+- isList
+- isUndefined
+- isCallback
+- isString
+- isNumber
+- isBool
+
+#### Examples
 
 ```javascript
 const TypeCheck = require('js-typecheck');
