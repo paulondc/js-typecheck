@@ -4,7 +4,7 @@ Tiny collection of predictable type checking for Javascript.
 #### Motivation
 Coming from other languages one of the things that can make javascript very annoying is type checking, this module makes it as predictable as it is in other languages.
 
-In addition for the same reason described above it brings some useful checkings for classes, like isInstanceOf, isSubClassOf, etc ...
+In addition for the same reason described above it brings some useful checkings for classes, like isInstanceOf and  isSubClassOf.
 
 #### Requirements
 This module requires support for es6+
@@ -33,7 +33,7 @@ const TypeCheck = require('js-typecheck');
 // string checking
 if (TypeCheck.isString("text"))
   console.log("it's a string");
-  
+
 
 // number checking
 if (TypeCheck.isNumber(5))
@@ -45,7 +45,7 @@ if (TypeCheck.isCallback(function(){}))
   console.log("it's a callback")
 
 
-// Subclassing checking 
+// Subclassing checking
 class A{}
 class B extends A {}
 
@@ -61,12 +61,10 @@ if (TypeCheck.isInstanceOf(new B(), A))
 // List (array) checking
 if (TypeCheck.isList([1, 2])
   console.log("it's a list");
-  
+
 
 // ...
 // more examples can be found under the tests
 ```
 
 Please feel free to contact me if you have any questions.
-
-

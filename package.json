@@ -1,0 +1,28 @@
+{
+  "name": "js-typecheck",
+  "version": "0.1.0",
+  "description": "Tiny collection of predictable type checking for Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulondc/js-typecheck.git"
+  },
+  "keywords": [
+    "es6",
+    "typechecking",
+    "class",
+    "oop"
+  ],
+  "author": "Paulo Nogueira <paulondc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulondc/js-typecheck/issues"
+  },
+  "homepage": "https://github.com/paulondc/js-typecheck#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
