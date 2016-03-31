@@ -42,7 +42,7 @@ if (TypeCheck.isNumber(5))
 
 // callback (function) checking
 if (TypeCheck.isCallback(function(){}))
-  console.log("it's a callback")
+  console.log("it's a callback");
 
 
 // Subclassing checking
