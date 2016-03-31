@@ -1,2 +1,59 @@
 # js-typecheck
-Small collection of type checking for javascript es6+
+Tiny collection of type checking in a reasonable way for Javascript.
+
+#### Motivation
+Coming from other languages one of the things that can make javascript very annoying is type checking, this module makes it as simple as they are in other languages.
+
+In addition for the same reason as described above it brings some useful checkings for classes, like isInstanceOf, isSubClassOf, etc ...
+
+#### Requirements
+This module requires support for es6+
+
+#### install
+npm install js-typecheck --save
+
+#### examples
+
+```javascript
+const TypeCheck = require('js-typecheck');
+
+// string checking
+if (TypeCheck.isString("text"))
+  console.log("it's a string");
+  
+
+// number checking
+if (TypeCheck.isNumber(5))
+  console.log("it's a number");
+
+
+// callback (function) checking
+if (TypeCheck.isCallback(function(){}))
+  console.log("it's a callback")
+
+
+// Subclassing checking 
+class A{}
+class B extends A {}
+
+if (TypeCheck.isSubClassOf(B, A))
+  console.log("B is derived from A");
+
+
+// Instance checking
+if (TypeCheck.isInstanceOf(new B(), A))
+  console.log("B is istance of A");
+
+
+// List (array) checking
+if (TypeCheck.isList([1, 2])
+  console.log("it's a list");
+  
+
+// ...
+// more examples can be found under the tests
+```
+
+Please feel free to contact me if you have any questions.
+
+
