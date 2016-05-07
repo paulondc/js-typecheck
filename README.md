@@ -18,6 +18,7 @@ npm install js-typecheck --save
 - isInstanceOf
 - isSameType
 - isObject
+- isPlainObject
 - isList
 - isUndefined
 - isCallback
