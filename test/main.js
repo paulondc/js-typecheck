@@ -15,6 +15,17 @@
       assert(TypeCheck.isString("text"));
     });
 
+    it("Basic types should not be considered plain objects", function(){
+      assert(TypeCheck.isPlainObject({a: 1}));
+      assert(!TypeCheck.isPlainObject(null));
+      assert(!TypeCheck.isPlainObject(undefined));
+      assert(!TypeCheck.isPlainObject("text"));
+      assert(!TypeCheck.isPlainObject(null));
+      assert(!TypeCheck.isPlainObject(1));
+      assert(!TypeCheck.isPlainObject([]));
+      assert(!TypeCheck.isPlainObject(false));
+    });
+
     it("Numbers should not be considered as string type", function(){
       assert(!TypeCheck.isString(1));
     });

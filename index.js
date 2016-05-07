@@ -3,11 +3,6 @@
 // Simplifies common type checks
 class TypeCheck {
 
-  // Returns a boolean telling if the input value is a string
-  static isString(value){
-    return (typeof value == 'string' || value instanceof String);
-  }
-
   // Returns a boolean telling if the input class A is a sub class from class B
   static isSubClassOf(objClassA, objClassB) {
 
@@ -36,6 +31,19 @@ class TypeCheck {
   // Returns a boolean telling if the input value is really an object (not a class which is defined as function in javascript)
   static isObject(value){
     return (typeof value === 'object');
+  }
+
+  // Returns a boolean telling if the input value is a plain object (kind of dict: {a: 1, b: 2})
+  static isPlainObject(value){
+    if (!(this.isList(value) || this.isCallback(value) || (value === null)))
+      return this.isObject(value);
+
+    return false;
+  }
+
+  // Returns a boolean telling if the input value is a string
+  static isString(value){
+    return (typeof value == 'string' || value instanceof String);
   }
 
   // Returns a boolean telling if the input value is a list (array)
