@@ -36,7 +36,7 @@ class TypeCheck {
   // Returns a boolean telling if the input value is a plain object (kind of dict: {a: 1, b: 2})
   static isPlainObject(value){
     if (!(this.isList(value) || this.isCallback(value) || (value === null)))
-      return this.isObject(value);
+      return (this.isObject(value) && value.constructor === Object);
 
     return false;
   }

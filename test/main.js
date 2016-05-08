@@ -17,12 +17,14 @@
 
     it("Basic types should not be considered plain objects", function(){
       assert(TypeCheck.isPlainObject({a: 1}));
+
       assert(!TypeCheck.isPlainObject(null));
       assert(!TypeCheck.isPlainObject(undefined));
       assert(!TypeCheck.isPlainObject("text"));
       assert(!TypeCheck.isPlainObject(null));
       assert(!TypeCheck.isPlainObject(1));
       assert(!TypeCheck.isPlainObject([]));
+      assert(!TypeCheck.isPlainObject(new Date()));
       assert(!TypeCheck.isPlainObject(false));
     });
 
