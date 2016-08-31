@@ -1,6 +1,7 @@
 <img src="data/logo.png"/>
 
 
+[![Build Status](https://travis-ci.org/paulondc/js-typecheck.svg?branch=master)](https://travis-ci.org/paulondc/js-typecheck)
 
 TypeCheck provides a tiny collection of predictable type checking for javascript. There are several other libraries that also provide this functionally, however they tend to bring it as part of many other features where many of them are no longer required since [ES6](http://es6-features.org).
 
