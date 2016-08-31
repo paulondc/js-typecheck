@@ -21,7 +21,7 @@ class TypeCheck {
   // Returns a boolean telling if the two objects are the same type
   static isSameType(objInstanceA, objInstanceB){
 
-    if (TypeCheck.isObject(objInstanceA) && TypeCheck.isObject(objInstanceB))
+    if (this.isObject(objInstanceA) && this.isObject(objInstanceB))
       if (objInstanceA.constructor === objInstanceB.constructor)
         return true;
 
@@ -70,6 +70,12 @@ class TypeCheck {
   static isCallback(value){
     return (typeof value == 'function');
   }
+
+  // Returns a boolean telling if the input value is a callable (function)
+  static isCallable(value){
+    return this.isCallback(value);
+  }
+
 }
 
 module.exports = TypeCheck;
