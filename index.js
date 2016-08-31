@@ -1,5 +1,6 @@
 'use strict';
 
+
 // Simplifies common type checks
 class TypeCheck {
 
