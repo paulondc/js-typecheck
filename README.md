@@ -17,7 +17,7 @@ npm install js-typecheck --save
 
 #### Supported
 
-Returns if class "A" is a subclass of "B":
+Returns if class "B" is a subclass of "A":
 ```javascript
 const TypeCheck = require('js-typecheck')
 
