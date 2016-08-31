@@ -1,6 +1,6 @@
 {
   "name": "js-typecheck",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Tiny collection of predictable type checking for Javascript",
   "main": "index.js",
   "scripts": {
