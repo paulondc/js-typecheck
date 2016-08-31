@@ -21,12 +21,12 @@ Returns if the object or class (a) is a subclass of (B):
 TypeCheck.isSubClassOf(a, B)
 ```
 ---
-Returns if the object (a) is an instance of another object (b):
+Returns if the object (a) is an instance of object (b):
 ```javascript
 TypeCheck.isInstanceOf(a, b)
 ```
 ---
-Returns if the object (a) has the same type as the object (b):
+Returns if the object (a) has the same type as object (b):
 ```javascript
 TypeCheck.isSameType(a, b)
 ```
@@ -51,7 +51,7 @@ Returns if the input (a) is undefined:
 TypeCheck.isUndefined(a)
 ```
 ---
-Returns if the input (a) is a callable:
+Returns if the input (a) is a function:
 ```javascript
 TypeCheck.isCallable(a)
 // or
