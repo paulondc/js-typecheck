@@ -99,14 +99,14 @@
     });
 
     // is callback
-    it("Function should match as callback", function(){
+    it("Function should match as callable/callback", function(){
+      assert(TypeCheck.isCallable(function(){}));
       assert(TypeCheck.isCallback(function(){}));
     });
 
-    it("Objects should not match as callback", function(){
+    it("Objects should not match as callable/callback", function(){
+      assert(!TypeCheck.isCallable(new A()));
       assert(!TypeCheck.isCallback(new A()));
     });
-
   });
-
 })();
