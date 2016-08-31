@@ -17,109 +17,74 @@ npm install js-typecheck --save
 
 #### Supported
 
-Returns if the object or class (a) is a subclass of (B):
+Returns if class "A" is a subclass of "B":
 ```javascript
-TypeCheck.isSubClassOf(a, B)
-```
----
-Returns if the object (a) is an instance of object (b):
-```javascript
-TypeCheck.isInstanceOf(a, b)
-```
----
-Returns if the object (a) has the same type as object (b):
-```javascript
-TypeCheck.isObject(a, b)
-```
----
-Returns if the input (a) is an object:
-```javascript
-TypeCheck.isSameType(a)
-```
----
-Returns if the input (a) is a plain object (objects created using literal notation):
-```javascript
-TypeCheck.isPlainObject(a)
-```
----
-Returns if the input (a) is an array object:
-```javascript
-TypeCheck.isList(a)
-```
----
-Returns if the input (a) is undefined:
-```javascript
-TypeCheck.isUndefined(a)
-```
----
-Returns if the input (a) is a function:
-```javascript
-TypeCheck.isCallable(a)
-// or
-TypeCheck.isCallback(a)
-```
----
-Returns if the input (a) is a string type:
-```javascript
-TypeCheck.isString(a)
-```
----
-Returns if the input (a) is a number type:
-```javascript
-TypeCheck.isNumber(a)
-```
----
-Returns if the input (a) is a boolean type:
-```javascript
-TypeCheck.isBool(a)
-```
+const TypeCheck = require('js-typecheck')
 
-#### Examples
-
-```javascript
-const TypeCheck = require('js-typecheck');
-
-// string checking
-if (TypeCheck.isString("text"))
-  console.log("it's a string");
-```
-
-```javascript
-// number checking
-if (TypeCheck.isNumber(5))
-  console.log("it's a number");
-```
-
-```javascript
-// callback (function) checking
-if (TypeCheck.isCallback(function(){}))
-  console.log("it's a callback");
-```
-
-```javascript
-// Subclassing checking
 class A{}
 class B extends A {}
 
-if (TypeCheck.isSubClassOf(B, A))
-  console.log("B is derived from A");
+TypeCheck.isSubClassOf(B, A)
 ```
-
+---
+Returns if object "b" is an instance of "A":
 ```javascript
-// Instance checking
-if (TypeCheck.isInstanceOf(new B(), A))
-  console.log("B is istance of A");
-```
+class A{}
+class B extends A {}
 
+TypeCheck.isInstanceOf(new B(), A)
+```
+---
+Returns if the input objects are the same type:
 ```javascript
-// List (array) checking
-if (TypeCheck.isList([1, 2])
-  console.log("it's a list");
+TypeCheck.isSameType(new Date(), "Not the same!")
 ```
-
+---
+Returns if the input is an object:
 ```javascript
-// ...
-// more examples can be found under the tests
+TypeCheck.isObject(new Object())
+```
+---
+Returns if the input is a plain object (objects created using literal notation):
+```javascript
+TypeCheck.isPlainObject({a: 1, b: 2})
+```
+---
+Returns if the input is an array object:
+```javascript
+TypeCheck.isList([1, 2, 3, 4, 5])
+```
+---
+Returns if the input is undefined:
+```javascript
+TypeCheck.isUndefined(Object.ItDoesNotExist)
+```
+---
+Returns if the input is a function:
+```javascript
+
+TypeCheck.isCallable(function(){})
+// for convenience it's provided as isCallback as well
+TypeCheck.isCallback(() => {})
+```
+---
+Returns if the input is a string type:
+```javascript
+TypeCheck.isString("foo")
+```
+---
+Returns if the input is a number type:
+```javascript
+TypeCheck.isNumber(5.0)
+```
+---
+Returns if the input is a boolean type:
+```javascript
+TypeCheck.isBool(true)
 ```
 
-Please feel free to contact me if you have any questions.
+#### Examples
+Take a look at the [tests](test/main.js) for more examples about it
+
+#### Contact
+Please feel free to contact me if you have any questions
