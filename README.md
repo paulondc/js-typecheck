@@ -28,7 +28,7 @@ TypeCheck.isInstanceOf(a, b)
 ---
 Returns if the object (a) has the same type as object (b):
 ```javascript
-TypeCheck.isSameType(a, b)
+TypeCheck.isObject(a, b)
 ```
 ---
 Returns if the input (a) is an object:
