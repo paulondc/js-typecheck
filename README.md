@@ -15,7 +15,7 @@ npm install js-typecheck --save
 ```
 
 #### Supported
----
+
 Returns if the object or class (a) is a subclass of (B):
 ```javascript
 TypeCheck.isSubClassOf(a, B)
