@@ -1,16 +1,21 @@
 <img src="data/logo.png"/>
 
-jsTypeCheck provides a tiny collection of predicable type checking for javascript. There are several other libraries that also provide this functionally, however they tend to bring it as part of many other features where many of them are no longer required since [ES6](http://es6-features.org).
 
-The goal of this library is to be a tiny/skinny depedency focused exclusively in type checking things, therefore providing a direct and simple interface (rather than trying to solve all problems related with javascript itself)
+
+TypeCheck provides a tiny collection of predictable type checking for javascript. There are several other libraries that also provide this functionally, however they tend to bring it as part of many other features where many of them are no longer required since [ES6](http://es6-features.org).
+
+The goal of this library is to be a tiny/skinny dependency focused exclusively in type checking things, therefore providing a direct and simple interface ~~(rather than trying to solve all problems related with javascript itself)~~.
 
 #### Requirement
-This module requires support for es6
+This module requires support for [ES6](http://es6-features.org)
 
 #### Install
+```
 npm install js-typecheck --save
+```
 
 #### Supported
+---
 Returns if the object or class (a) is a subclass of (B):
 ```javascript
 TypeCheck.isSubClassOf(a, B)
