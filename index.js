@@ -76,7 +76,6 @@ class TypeCheck {
   static isCallable(value){
     return this.isCallback(value);
   }
-
 }
 
 module.exports = TypeCheck;
