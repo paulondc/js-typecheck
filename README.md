@@ -63,10 +63,13 @@ TypeCheck.isUndefined(Object.ItDoesNotExist)
 Checks if the input is a function
 ```javascript
 
-TypeCheck.isCallable(function(){})
-// for convenience it's provided as isCallback as well
+TypeCheck.isCallable(() => {})
+```
+or
+```javascript
 TypeCheck.isCallback(() => {})
 ```
+
 ---
 Checks if the input is a string type
 ```javascript
