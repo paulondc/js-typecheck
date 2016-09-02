@@ -1,9 +1,7 @@
 <img src="data/logo.png"/>
 
 
-[![Build Status](https://travis-ci.org/paulondc/js-typecheck.svg?branch=master)](https://travis-ci.org/paulondc/js-typecheck)
-
-[![codecov.io](https://codecov.io/github/paulondc/js-typecheck/coverage.svg?branch=master)](https://codecov.io/github/paulondc/js-typecheck?branch=master)
+[![Build Status](https://travis-ci.org/paulondc/js-typecheck.svg?branch=master)](https://travis-ci.org/paulondc/js-typecheck) [![codecov.io](https://codecov.io/github/paulondc/js-typecheck/coverage.svg?branch=master)](https://codecov.io/github/paulondc/js-typecheck?branch=master)
 
 TypeCheck provides a tiny collection of predictable type checking for javascript.
 
@@ -57,16 +55,18 @@ Checks if the input is an array object
 TypeCheck.isList([1, 2, 3, 4, 5])
 ```
 ---
-Checks if the input is None, either null or undefined
+Checks if the input is none, either null or undefined
 ```javascript
 TypeCheck.isNone(null)
+```
+or
+```javascript
 TypeCheck.isNone(undefined)
 ```
 
 ---
 Checks if the input is a function
 ```javascript
-
 TypeCheck.isCallable(() => {})
 ```
 or
