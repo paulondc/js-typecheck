@@ -1,7 +1,7 @@
 'use strict';
 
 
-// Simplifies common type checks
+// Tiny collection of predictable type checking
 class TypeCheck {
 
   // Returns a boolean telling if the input class A is a sub class from class B
@@ -52,9 +52,9 @@ class TypeCheck {
     return Array.isArray(value);
   }
 
-  // Returns a boolean telling if the input value is undefined
-  static isUndefined(value){
-    return (typeof value === 'undefined');
+  // Returns a boolean telling if the input value is either null or undefined
+  static isNone(value){
+    return (value === undefined || value === null);
   }
 
   // Returns a boolean telling if the input value is a number

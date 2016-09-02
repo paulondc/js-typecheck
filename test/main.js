@@ -35,6 +35,7 @@
     // is subclass of
     it ("B class should match as subclass of A", function(){
       assert(TypeCheck.isSubClassOf(B, A));
+      assert(!TypeCheck.isSubClassOf(new B(), A));
     });
 
     it ("A class should not match as subclass of B", function(){
@@ -59,6 +60,16 @@
       assert(!TypeCheck.isObject(function(){}));
     });
 
+    // is same type
+    it ("Should match as same object type", function(){
+      assert(TypeCheck.isSameType(new A(), new A()));
+    });
+
+    it ("Should not match as same type", function(){
+      assert(!TypeCheck.isSameType(A, new B()));
+      assert(!TypeCheck.isSameType(new A(), new B()));
+    });
+
     // is list
     it ("Should match as list", function(){
       assert(TypeCheck.isList(["A", "B", "C"]));
@@ -68,13 +79,14 @@
       assert(!TypeCheck.isList("Not a list"));
     });
 
-    // is list
-    it ("Should match as undefined", function(){
-      assert(TypeCheck.isUndefined("stringObject".someMethodThatDoesNotExist));
+    // is none
+    it ("Should match as None", function(){
+      assert(TypeCheck.isNone(undefined));
+      assert(TypeCheck.isNone(null));
     });
 
-    it ("Should not match as undefined", function(){
-      assert(!TypeCheck.isUndefined("stringObject".length));
+    it ("Should not match as None", function(){
+      assert(!TypeCheck.isNone("stringObject".length));
     });
 
     // is number

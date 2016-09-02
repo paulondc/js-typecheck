@@ -1,10 +1,10 @@
 {
   "name": "js-typecheck",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Tiny collection of predictable type checking for Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test --reporter spec"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/paulondc/js-typecheck#readme",
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "codecov": "^1.0.1",
+    "istanbul": "^0.4.5"
   }
 }

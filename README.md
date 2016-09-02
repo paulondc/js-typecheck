@@ -3,9 +3,11 @@
 
 [![Build Status](https://travis-ci.org/paulondc/js-typecheck.svg?branch=master)](https://travis-ci.org/paulondc/js-typecheck)
 
-TypeCheck provides a tiny collection of predictable type checking for javascript. There are several other libraries that also provide this functionally, however they tend to bring it as part of many other features where many of them are no longer required since [ES6](http://es6-features.org).
+[![codecov.io](https://codecov.io/github/paulondc/js-typecheck/coverage.svg?branch=master)](https://codecov.io/github/paulondc/js-typecheck?branch=master)
 
-The goal of this library is to be a tiny/skinny dependency focused exclusively in type checking, therefore providing a direct and simple interface.
+TypeCheck provides a tiny collection of predictable type checking for javascript.
+
+The goal of this library is to be a tiny dependency focused exclusively in type checking which in conjuction with [ES6](http://es6-features.org) provides a better experience in writting javascript code.
 
 #### Requirement
 This module requires support for [ES6](http://es6-features.org)
@@ -55,10 +57,12 @@ Checks if the input is an array object
 TypeCheck.isList([1, 2, 3, 4, 5])
 ```
 ---
-Checks if the input is undefined
+Checks if the input is None, either null or undefined
 ```javascript
-TypeCheck.isUndefined(Object.ItDoesNotExist)
+TypeCheck.isNone(null)
+TypeCheck.isNone(undefined)
 ```
+
 ---
 Checks if the input is a function
 ```javascript
