@@ -27,14 +27,6 @@ class B extends A {}
 TypeCheck.isSubClassOf(B, A)
 ```
 ---
-Checks if "b" is an instance of "A"
-```javascript
-class A{}
-class B extends A {}
-
-TypeCheck.isInstanceOf(new B(), A)
-```
----
 Checks if the input objects are the same type
 ```javascript
 TypeCheck.isSameType(new Date(), "Not the same!")

@@ -14,11 +14,6 @@ class TypeCheck {
     return (objClassA.prototype instanceof objClassB);
   }
 
-  // Returns a boolean telling if the input object is an instance from the input class
-  static isInstanceOf(objInstance, objClass) {
-    return (objInstance instanceof objClass || this.isSubClassOf(objInstance.constructor, objClass));
-  }
-
   // Returns a boolean telling if the two objects are the same type
   static isSameType(objInstanceA, objInstanceB){
 
