@@ -42,15 +42,6 @@
       assert(!TypeCheck.isSubClassOf(A, B));
     });
 
-    // is instance of
-    it ("B instance should match as subclass of A", function(){
-      assert(TypeCheck.isInstanceOf(new B(), A));
-    });
-
-    it ("A instance should not match as subclass of B", function(){
-      assert(!TypeCheck.isInstanceOf(new A(), B));
-    });
-
     // is object
     it ("Should match as object", function(){
       assert(TypeCheck.isObject(new A()));
