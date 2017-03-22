@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/paulondc/js-typecheck#readme",
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "codecov": "^1.0.1",
-    "istanbul": "^0.4.5"
+    "codecov": "^2.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
   }
 }
