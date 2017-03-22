@@ -71,6 +71,11 @@ class TypeCheck {
   static isCallable(value){
     return this.isCallback(value);
   }
+
+  // Returns a boolean telling if the input value is a primitive
+  static isPrimitive(value){
+    return (this.isNone(value) || this.isString(value) || this.isNumber(value) || this.isBool(value));
+  }
 }
 
 module.exports = TypeCheck;

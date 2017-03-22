@@ -111,5 +111,20 @@
       assert(!TypeCheck.isCallable(new A()));
       assert(!TypeCheck.isCallback(new A()));
     });
+
+    // is primitive
+    it("Value should be a primitive", function(){
+      assert(TypeCheck.isPrimitive('text'));
+      assert(TypeCheck.isPrimitive(true));
+      assert(TypeCheck.isPrimitive(10));
+      assert(TypeCheck.isPrimitive(null));
+      assert(TypeCheck.isPrimitive(undefined));
+    });
+
+    it("Value should not be a primitive", function(){
+      assert(!TypeCheck.isPrimitive({}));
+      assert(!TypeCheck.isPrimitive(function(){}));
+      assert(!TypeCheck.isPrimitive(new Date()));
+    });
   });
 })();
